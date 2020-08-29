@@ -1,0 +1,13 @@
+
+In this code we have used sklearn CountVectorizer to predict which words are the most common from a text corpus since we are looking for some patterns.
+Steps followed:
+
+1.we have Bag of Word model that has cleaned the text, removing non-aphanumeric characters and stop words.
+
+2.bag_of_words is a matrix where each row represents a specific text in corpus and each column represents a word in vocabulary, that is, all words found in corpus.
+
+3.sum_words is a vector that contains the sum of each word occurrence in all texts in the corpus. In other words, we are adding the elements for each column of bag_of_words matrix.
+
+4.Finally we sort a list of tuples that contain the word and their occurrence in the corpus.
+
+5.At last, we have read the csv file and called the get_top_n_words function to generate the most common words.
